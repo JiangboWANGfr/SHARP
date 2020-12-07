@@ -1,0 +1,15 @@
+zzdr\service\UserService.class
+zzdr\service\impl\UserServiceImpl.class
+zzdr\domain\User.class
+zzdr\util\JDBCUtils.class
+zzdr\web\servlet\removeShareUserServlet.class
+zzdr\dao\UserDao.class
+zzdr\web\servlet\RegisterUserServlet.class
+zzdr\service\impl\ShareUserServiceImpl.class
+zzdr\service\ShareUserService.class
+zzdr\web\servlet\LoginUserServlet.class
+zzdr\web\servlet\CheckCodeServlet.class
+zzdr\domain\ResultInfo.class
+zzdr\dao\impl\UserDaoImpl.class
+zzdr\web\servlet\shareUserServlet.class
+zzdr\domain\SharedUser.class

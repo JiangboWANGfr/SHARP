@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>DINGWEI</title>
+<!--	<script src="sweetalert2.all.min.js"></script>-->
+	<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+<!--	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<!-- 导入CSS的全局样式 -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!--引入表单校验插件CSS类库-->
+	<link href="css/bootstrapValidator.min.css" rel="stylesheet" />
+
+<!--	弹窗的css-->
+<!--	<link rel="stylesheet" type="text/css" href="https://www.huangwx.cn/css/sweetalert.css">-->
+<!--	<script type="text/javascript" src="https://www.huangwx.cn/js/sweetalert-dev.js"></script>-->
+<!--	-->
+<!--	<link rel="stylesheet" href="/tc/sweetalert.css" />-->
+<!--	<script type="text/javascript" src="/tc/sweetalert-dev.js"></script>-->
+
+	<!-- <style>
+    body {
+      background: url("img/bg.jpg") no-repeat center;
+    }
+  </style> -->
+
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="bg"></div>
+	<div id="overlay"></div>
+	<div id="main">
+		<header id="header">
+			<div class="inner">
+				<h1 class="line">SHARP</h1>
+<!--				<p></p>-->
+				<div id="errorMsg" style="color:red;text-align: center"></div>
+				<article id="work">
+					<!-- <h2 class="align-center">填写信息</h2> -->
+					<section class="signup">
+						<div class="container">
+							<div class="signup-content">
+								<div class="signup-form">
+									<!-- <h2 class="form-title">Sign up</h2> -->
+									<form method="POST" class="register-form" id="register-form">
+										<div>
+											<!-- 数据线种类，不用下拉框了用多选一，有图片更方便-->
+											<span style="color: #ffffff;display: block;font-size: 0.8rem;
+                                                            font-weight: 300;
+                                                            letter-spacing: 0.2rem;
+                                                            line-height: 1.5;
+                                                            margin: 0 0 1rem 0;
+                                                            text-transform: uppercase;"></span>
+											<span>
+                                                    <br>
+
+
+                                                    <input type="radio" name="type" value=1 id="1" />
+                                                    <label for="1">
+                                                        <ul style="list-style: none;">
+                                                            <li><img src="usb.jpg" width="200" height="180" /></li>
+                                                            <li>
+                                                                <p class="align-center"></p>
+                                                            </li>
+                                                        </ul>
+                                                    </label>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <input type="radio" name="type" value=2 id="2" />
+                                                    <label for="2">
+                                                        <ul style="list-style: none;">
+                                                            <li><img src="c .jpg" width="200" height="180" /></li>
+                                                            <li>
+                                                                <p class="align-center"></p>
+                                                            </li>
+                                                        </ul>
+                                                    </label>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <input type="radio" name="type" value=3 id="3" />
+                                                    <label for="3">
+                                                        <ul style="list-style: none;">
+                                                            <li><img src="lightning.jpg" width="200" height="180" />
+                                                            </li>
+                                                            <li>
+                                                                <p class="align-center"></p>
+                                                            </li>
+                                                        </ul>
+                                                    </label> <br /> <br>
+                                                </span>
+										</div>
+										<!-- 地址、定位 -->
+										<!-- <div class="field">
+                                            <label for="message">详细地址</label>
+                                            <textarea name="message" id="message" rows="4" placeholder="请输入详细地址以便定位"></textarea>
+                                        </div>
+                                        </div>
+                                        <ul class="actions">
+                                            <li><input type="submit" value="提交并定位" class="primary" /></li>
+                                            <li><input type="reset" value="重置" /></li>
+                                        </ul> -->
+										<!-- <h3 class="major">Buttons</h3> -->
+										<!-- <ul class="actions"> -->
+
+										<!-- <li><a href="#share" class="button">SHARE</a></li> -->
+<!--										<div style="color: black;display: block;font-size: 30px;-->
+<!--                                            font-weight: 300;-->
+<!--                                            letter-spacing: 0.2rem;-->
+<!--                                            line-height: 1.5;-->
+<!--                                            margin: 0 0 1rem 0;-->
+<!--                                            &lt;!&ndash;text-transform: uppercase;"><span><input type="submit" value="submit" id="submit" style="background-color: rgba(124, 206, 179, 0.1);" /></span>-->
+<!--											&lt;!&ndash; <span><input type="submit" value="need" id="need"-->
+<!--                                                    style="background-color: rgb(124, 206, 179,0.1);" /></span> &ndash;&gt;-->
+<!--											<br>-->
+<!--											&lt;!&ndash; <a href="share11.html" class="button">SHARE</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+<!--											<a href="need1.html" class="button">NEED</a> &ndash;&gt;-->
+
+<!--										</div>-->
+
+
+
+
+
+										<!-- </ul> -->
+									</form>
+								</div>
+								<!-- <div class="signup-image">
+                                    <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
+                                    <a href="#" class="signup-image-link">I am already member</a> -->
+								<!-- </div> -->
+							</div>
+						</div>
+					</section>
+				</article>
+			</div>
+			<button class="" id="share1" type="submit" value="share1">share</button>
+
+			<button class="" id="need1" type="submit" value="need1">need</button>
+			<button class="" id="leave" type="submit" value="leave">leave</button>
+		</header>
+<!--		<button class="" id="need1" type="submit" value="need1">need1</button>-->
+
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+	</div>
+
+</div>
+<!-- jQuery导入,为兼容低版本浏览器我们选择1.x.x版本 -->
+<script src="js/jquery-2.1.0.min.js"></script>
+<!-- 导入bootstrap的js文件 -->
+<script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+
+	$(function () {
+		//share
+		function getLocation1() {
+			if (navigator.geolocation) {
+				// x1.innerHTML = JSON.stringify(navigator)
+				navigator.geolocation.getCurrentPosition(showPosition1, showError, {
+					enableHighAcuracy: true,// 指示浏览器获取高精度的位置，默认为false
+					timeout: 5000,// 指定获取地理位置的超时时间，默认不限时，单位为毫秒
+					maximumAge: 2000 // 最长有效期，在重复获取地理位置时，此参数指定多久再次获取位置。
+				});
+			} else {
+				// locationByIp();
+				x.innerHTML = "Geolocation is not supported by this browser.";
+				//    console.log("Geolocation is not supported by this browser.");
+			}
+		}
+
+		function showPosition1(position) {
+			let usbType = $('input:radio[name="type"]:checked').val();
+			// alert(usbType)
+			if (usbType == null) {
+				swal("WARNING", "请选择一种数据线类型!", "warning")
+				return false;
+			} else {
+				// alert(ShareUsbType)
+				// location.href = "#need";
+				let ShareUsbType1 = 3
+				let latitude = position.coords.latitude;
+				let longitude = position.coords.longitude;
+				// alert(latitude)
+				// alert(longitude)
+				// alert(ShareUsbType)
+				// $("#errorMsg").html("已经在分享中了");
+				// location.href = "share11.html";
+				// swal("分享成功", "分享成功，正在等待其他小可爱获取你的分享中","success")
+
+				// needTC();
+				$.post("shareUserServlet", {
+					usbType: usbType,
+					latitude: latitude,
+					longitude: longitude
+				}, function (data) {
+					if (data.flag) {
+						swal("分享成功", "分享成功，正在等待其他小可爱获取你的分享中", "success");
+					} else {
+						// $("#errorMsg").html(data.errorMsg);
+						swal("ERROR", data.errorMsg, "error")
+
+					}
+				});
+			}
+
+			// x.innerHTML = "Latitude: " + position.coords.latitude + "<br />Longitude: " + position.coords.longitude;
+		};
+
+		//need
+		function getLocation2() {
+			if (navigator.geolocation) {
+				// x1.innerHTML = JSON.stringify(navigator)
+				navigator.geolocation.getCurrentPosition(showPosition2, showError, {
+					enableHighAcuracy: true,// 指示浏览器获取高精度的位置，默认为false
+					timeout: 5000,// 指定获取地理位置的超时时间，默认不限时，单位为毫秒
+					maximumAge: 2000 // 最长有效期，在重复获取地理位置时，此参数指定多久再次获取位置。
+				});
+			} else {
+				// locationByIp();
+				// x.innerHTML = "Geolocation is not supported by this browser.";
+				//    console.log("Geolocation is not supported by this browser.");
+			}
+		}
+
+		function showPosition2(position) {
+			let usbType = $('input:radio[name="type"]:checked').val();
+			// alert(usbType)
+			if (usbType == null) {
+				// alert("请选择一种数据线类型!");
+				// swal("分享成功", "分享成功，正在等待其他小可爱获取你的分享中","success")
+				swal("警告", "请选择一种数据线类型!", "warning")
+				return false;
+			} else {
+				// location.href = "#need";
+				// let needUsername =
+				let needLatitude = position.coords.latitude;
+				let needLongitude = Math.abs(position.coords.longitude);
+
+				// needTC();
+				// $("#errorMsg").html("已经在分享中了");
+				// location.href = "share11.html";
+				$.post("needUserServlet", {
+					usbType: usbType,
+					latitude: needLatitude,
+					longitude: needLongitude
+				}, function (data) {
+					if (data.flag) {
+						// alert(needLongitude)
+						let shareUsername = data.data.username;
+						let shareUserTel = data.data.telephone;
+						// let shareUsbType= data.data.usbType;
+						let shareUserLatitude = data.data.latitude;
+						let shareUserLongitude = Math.abs(data.data.longitude);
+						// alert(shareUserLatitude)
+						// alert(shareUserLongitude)
+						// alert(needLatitude)
+						// alert(needLongitude)
+						// alert(shareUserLatitude)
+						// alert(shareUserLongitude)
+						let shareUserInfo = "ShareUsername: " + shareUsername + "\nSharetelephone: " + shareUserTel;
+						// let url = "http://api.map.baidu.com/direction?origin=latlng:34.264642646862,108.95108518068|name:我家&destination=大雁塔&mode=driving&region=西安&output=html&src=webapp.baidu.openAPIdemo"
+						// let url = "http://api.map.baidu.com/direction?origin=latlng:"+ shareUserLatitude + "," +
+						// 		math.abs(shareUserLongitude) +"|name:" + shareUsername + "&destination=大雁塔&mode=driving&region=西安&output=html&src=webapp.baidu.openAPIdemo";
+						// alert(url)
+						// http://api.map.baidu.com/direction?origin=latlng:39.73,116.16|name:天安门&destination=latlng:34.035,-118.25|name:天安门&mode=driving&region=北京&output=html&src=webapp.baidu.openAPIdemo
+						//let url = "http://api.map.baidu.com/direction?origin=latlng:"+ 39.73 +"," + 116.16 + "|name:"+"天安门" + "&destination=latlng:"+"35.264642646862"+"," + "109.95108518068" +"|name:" +"天安门" +"&mode=walking&region=北京&output=html&src=webapp.baidu.openAPIdemo"
+						let url2 = "http://api.map.baidu.com/direction?origin=latlng:" + needLatitude + "," + needLongitude + "|name:我" + "&destination=latlng:" + shareUserLatitude + "," + shareUserLongitude + "|name:" + shareUsername + "&mode=driving&region=北京&output=html&src=webapp.baidu.openAPIdemo"
+						// alert(url2)
+						needTC(shareUserInfo, url2);
+
+						// swal("获取成功", "Username" + shareUsername,"success")
+						// 2、经纬度：39.98871<纬度>,116.43234<经度>。 3、名称和经纬度：name:天安门|latlng:39.98871,116.43234
+						// let url = "
+
+
+					} else {
+						// alert("error")
+						// $("#errorMsg").html(data.errorMsg);
+						swal("ERROR", data.errorMsg, "error")
+					}
+
+				});
+			}
+			// x.innerHTML = "Latitude: " + position.coords.latitude + "<br />Longitude: " + position.coords.longitude;
+		};
+		showError = (error) => {
+			// locationByIp();
+			switch (error.code) {
+				case error.PERMISSION_DENIED:
+					alert("定位失败,用户拒绝请求地理定位");
+					break;
+				case error.POSITION_UNAVAILABLE:
+					alert("定位失败,位置信息是不可用");
+					break;
+				case error.TIMEOUT:
+					alert("定位失败,请求获取用户位置超时");
+					break;
+				case error.UNKNOWN_ERROR:
+					alert("定位失败,定位系统失效");
+					break;
+			}
+		};
+
+		$("#share1").click(function () {
+			// alert("share")
+			// location.href = "share11.html";
+			// alert("2")
+			getLocation1();
+		});
+
+		$("#need1").click(function () {
+			// alert("need")
+			getLocation2();
+			// needTC();
+		});
+		$("#leave").click(function () {
+			let username =
+					$.post("removeShareUserServlet", { }, function (data) {
+						if (data.flag) {
+							swal("leave", "leave成功，可以退出了", "success");
+						}else{
+							swal("ERROR", "没有在分享之中", "error");
+						}
+					});
+
+		});
+
+		function needTC1() {
+			swal({
+				title: "您确定要修改密码吗",
+				text: "修改后，请使用新密码登陆！",
+				type: "warning",
+				showCancelButton: true,
+				confirmButtonColor: "#DD6B55",
+				// confirmButtonText: "修改",
+				// cancelButtonText: "取消",
+				closeOnConfirm: false
+			}).then(function () {
+				swal({
+					title: "修改成功！",
+					text: "请使用新密码登陆。",
+					type: "success",
+					confirmButtonText: "重新登陆",
+				}).then(function () {
+					window.location.href = "/login.html"
+				})
+			})
+		}
+
+		function needTC(shareUserInfo, url) {
+			// swal.enableButtons();
+			swal({
+				title: "确认获取吗",
+				text: "这将消耗你一次获取的机会",
+				type: "warning",
+				showCancelButton: true,
+				confirmButtonColor: "#DD6B55",
+				// confirmButtonText1: "确认",
+				// cancelButtonText: "取消",
+				closeOnConfirm: false,
+				showConfirmButton: true
+				// showLoaderOnConfirm: true,
+			}).then(function () {
+				swal({
+					title: "为你找到",
+					text: shareUserInfo,
+
+					type: "success",
+					showCancelButton: true,
+					confirmButtonColor: "DD6B55",
+					confirmButtonText: "导航",
+					cancelButtonText: false,
+					closeOnConfirm: false,
+					showLoaderOnConfirm: true,
+				}).then(function (isConfirm) {
+					if (isConfirm) {
+						window.location.href = url;
+					}
+
+				})
+			})
+		}
+	});
+
+
+</script>
+<!-- Scripts
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script> -->
+
+</body>
+
+</html>
